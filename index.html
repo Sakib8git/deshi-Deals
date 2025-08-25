@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deshi Deals</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  </head>
+  <body class="">
+    <header class="bg-gradient-to-b from-white to-pink-200 max-h-[1020px]">
+      <!-- logo part -->
+      <div class="flex space-x-3 justify-center items-center shadow-md p-3">
+        <div>
+          <img class="w-12" src="./assets/logo.png" alt="" />
+        </div>
+        <div>
+          <h1 class="text-[28px] text-[#E71580]">
+            Deshi <span class="font-bold">Deals</span>
+          </h1>
+          <p text-[#797075]>Cheap Price , Best Quality</p>
+        </div>
+      </div>
+
+      <!-- banner part -->
+      <!-- text part -->
+      <div class="max-w-[1440px] text-center mt-[140px] mx-auto">
+        <h1 class="text-[58px] font-bold">
+          Purchase TK 200 or above & get <br />
+          <span class="text-[#E71580]">20% off</span>
+        </h1>
+        <div class="flex space-x-[30px] items-center justify-center mt-9">
+          <p>Use Promo Code</p>
+          <button
+            class="btn btn-wide bg-[#E71580] rounded-md text-white text-[18px]"
+          >
+            SELL200
+          </button>
+        </div>
+        <figure class="flex justify-center">
+          <img src="./assets/hero-bg.png" alt="" />
+        </figure>
+      </div>
+    </header>
+    <main class="bg-slate-100">
+      <div></div>
+
+      <section
+        id="product-con"
+        class="lg:grid grid-cols-12 gap-8 py-[120px] w-11/12 mx-auto"
+      >
+        <!--!fixme: product box -->
+        <section id="product-box" class="col-span-7 md:col-span-9">
+          <!--!fixme: card con start -->
+          <div class="kitchen">
+            <h1 class="text-2xl font-bold mb-5">Kitchenware</h1>
+            <div class="kitchen-items-con md:grid grid-cols-3">
+              <!--*note: card 1 -->
+              <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="md:px-10 pt-10">
+                  <img
+                    src="./assets/kitchen-1.png"
+                    alt="Shoes"
+                    class="rounded-xl bg-gray-200 py-4 px-12"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title">K. Accessories</h2>
+                  <p class="card-price">140 <span>TK</span></p>
+                </div>
+                <div class="buy-but card-actions flex justify-center pb-6">
+                  <button class="btn btn-wide bg-[#E71580] text-white">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+              <!--*note: card 2 -->
+              <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="md:px-10 pt-10">
+                  <img
+                    src="./assets/kitchen-2.png"
+                    alt="Shoes"
+                    class="rounded-xl bg-gray-200 py-4 px-12"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title">K. Accessories</h2>
+                  <p class="card-price">140 <span>TK</span></p>
+                </div>
+                <div class="buy-but card-actions flex justify-center pb-6">
+                  <button class="btn btn-wide bg-[#E71580] text-white">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+              <!--*note: card 3 -->
+              <div class="card bg-base-100 w-96 shadow-sm">
+                <figure class="md:px-10 pt-10">
+                  <img
+                    src="./assets/kitchen-3.png"
+                    alt="Shoes"
+                    class="rounded-xl bg-gray-200 py-4 px-12"
+                  />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <p>⭐⭐⭐⭐⭐</p>
+                  <h2 class="card-title">K. Accessories</h2>
+                  <p class="card-price">140 <span>TK</span></p>
+                </div>
+                <div class="buy-but card-actions flex justify-center pb-6">
+                  <button class="btn btn-wide bg-[#E71580] text-white">
+                    Buy Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--!fixme: card con end -->
+        </section>
+        <!--!fixme: aside -->
+        <aside id="cart-box" class="col-span-3">
+          <div class="bg-white p-5">
+            <h2 class="font-bold text-xl m-5">Have a copun</h2>
+            <div class="join">
+              <input class="input join-item" placeholder="Email" />
+              <button
+                class="btn join-item rounded-r-xl bg-[#E71580] text-white"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+          <div class="add-cart-box mt-5 bg-white p-5">
+            <h2 class="font-bold">Cart</h2>
+            <div id="cart-con-products"></div>
+            <h2>Total Price: <span id="total-price">0</span> TK</h2>
+            <h2>Total Items: <span id="total-product">0</span></h2>
+            <div class="card-actions flex justify-center pb-6">
+              <button class="btn btn-block bg-[#E71580] text-white mt-5">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <!--*js link   -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
