@@ -70,12 +70,19 @@
                   />
                 </figure>
                 <div class="card-body items-center text-center">
-                  <p>⭐⭐⭐⭐⭐</p>
-                  <h2 class="card-title">K. Accessories</h2>
-                  <p class="card-price">140 <span>TK</span></p>
+                  <p id="star">⭐⭐⭐⭐⭐</p>
+                  <h2 id="card-item-title1" class="card-title">
+                    K. Accessories
+                  </h2>
+                  <p class="card-price">
+                    <span id="card-price1">140 </span> TK
+                  </p>
                 </div>
                 <div class="buy-but card-actions flex justify-center pb-6">
-                  <button class="btn btn-wide bg-[#E71580] text-white">
+                  <button
+                    
+                    class="btn btn-wide bg-[#E71580] text-white cart-btn"
+                  >
                     Buy Now
                   </button>
                 </div>
@@ -95,7 +102,7 @@
                   <p class="card-price">140 <span>TK</span></p>
                 </div>
                 <div class="buy-but card-actions flex justify-center pb-6">
-                  <button class="btn btn-wide bg-[#E71580] text-white">
+                  <button class="btn btn-wide bg-[#E71580] text-white cart-btn">
                     Buy Now
                   </button>
                 </div>
@@ -115,7 +122,7 @@
                   <p class="card-price">140 <span>TK</span></p>
                 </div>
                 <div class="buy-but card-actions flex justify-center pb-6">
-                  <button class="btn btn-wide bg-[#E71580] text-white">
+                  <button class="btn btn-wide bg-[#E71580] text-white cart-btn">
                     Buy Now
                   </button>
                 </div>
@@ -139,7 +146,12 @@
           </div>
           <div class="add-cart-box mt-5 bg-white p-5">
             <h2 class="font-bold">Cart</h2>
-            <div id="cart-con-products"></div>
+            <!-- !note:!add product con -->
+            <div id="cart-con-products">
+              <div >
+                
+              </div>
+            </div>
             <h2>Total Price: <span id="total-price">0</span> TK</h2>
             <h2>Total Items: <span id="total-product">0</span></h2>
             <div class="card-actions flex justify-center pb-6">
