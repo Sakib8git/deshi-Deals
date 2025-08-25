@@ -24,7 +24,7 @@ for (let cardBtn of cardBtns) {
 
     getElement("total-price").innerText = currentTotal;
 
-    // !------------------------
+    // !----------All marge--------------
     const cartConProduct = getElement("cart-con-products");
     // making div
     const newCart = document.createElement("div");
@@ -37,6 +37,10 @@ for (let cardBtn of cardBtns) {
               </div>
   `;
     cartConProduct.append(newCart);
+
+    let totalItems = getElement("total-items").innerText;
+    const finalTotal = Number(totalItems) + 1;
+    getElement("total-items").innerText = finalTotal;
   });
 }
 
