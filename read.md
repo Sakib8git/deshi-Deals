@@ -68,3 +68,22 @@ getElement("card-btn1").addEventListener("click", function () {
     totalPriceElement.innerText = updatedTotal.toFixed(2);
   });
 });
+
+
+
+
+
+
+//   const cartConProduct = getElement("cart-con-products");
+//   // making div
+//   const newCart = document.createElement("div");
+//   newCart.innerHTML = `
+//               <div class=" p-3 mb-3 bg-gray-200 flex  justify-between items-center rounded-lg">
+//                   <img class="w-16" src="./assets/kitchen-1.png" alt="" />
+//                   <div class="px-3">
+//                     <h2 class="font-bold">${productTitle}</h2>
+//                     <p>${productPrice} tk</p>
+//               </div>
+//   `;
+//   cartConProduct.append(newCart);
+// });
